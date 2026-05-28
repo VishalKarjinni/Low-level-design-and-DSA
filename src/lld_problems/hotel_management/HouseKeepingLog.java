@@ -6,6 +6,6 @@ public class HouseKeepingLog {
     String description;
     Date startDate;
     int duration;
-    HouseKeeper houseKeeper;
-    public void addRoom(Room room);
+//    HouseKeeper houseKeeper;
+//    public void addRoom(Room room);
 }

@@ -9,5 +9,5 @@ public class RoomKey {
     Boolean isActive;
     Boolean isMaster;
 
-    public void assigRoom(Room room);
+//    public void assigRoom(Room room);
 }

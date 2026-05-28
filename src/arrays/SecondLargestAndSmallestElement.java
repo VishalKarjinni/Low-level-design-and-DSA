@@ -5,6 +5,7 @@ public class SecondLargestAndSmallestElement {
     int small = Integer.MAX_VALUE;
     int secondLargest = Integer.MIN_VALUE;
     int largest = Integer.MIN_VALUE;
+
     public int secondSmallest(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < small) {

@@ -1,25 +1,24 @@
 package lld_problems.tic_tac_toe;
+// 3. Player (Entity Holds identity + piece)
+public class Player {
+    private String name;
+    private Piece piece;
 
-//Player (Abstraction)
-//Why?
-//So we can extend Human / Bot without modifying Game.
-
-public abstract class Player {
-    protected String name;
-    protected char symbol;
-
-    public Player (String name, char symbol) {
+    public Player(String name, PieceType pieceType) {
         this.name = name;
-        this.symbol = symbol;
-    }
-
-    public char getSymbol() {
-        return symbol;
+        this.piece = new Piece(pieceType);
     }
 
     public String getName() {
         return name;
     }
 
-//    public abstract Move makeMove(Board board);
+    public Piece getPiece() {
+        return piece;
+    }
+
+    @Override
+    public String toString() {
+        return name + " (" + piece + ") ";
+    }
 }
